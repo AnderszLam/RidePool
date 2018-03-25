@@ -31,10 +31,10 @@ h2 {
 .bluebtn {
     background-color: #154159;
     font-family: Lato;
-    font-weight:900;
+    font-weight: 900;
     color: #ffffff;
     border-radius: 10px;
-    border:1px solid #154159;
+    border: 1px solid #154159;
 }
 
 select {
@@ -53,4 +53,55 @@ input {
     line-height: normal;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+table,
+tr,
+td {
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #154159;
+    text-align: center;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right:15px;
+    min-width: 75px;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+tr:nth-child(1) {
+    border-top: none;
+}
+ tr:nth-last-child(1){
+    border-bottom: none;
+ }
+
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+tr:hover{
+    background-color: #D0D9DD;
+}
+
+table {
+    border-collapse: collapse;
+    sortable: true;
+}
+
+th {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+td {
+    font-weight: 400;
+    font-size: 16px;
 }
