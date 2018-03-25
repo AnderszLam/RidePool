@@ -2,6 +2,14 @@
 body {font-family: Arial;}
 * {box-sizing: border-box}
 
+h1 {
+    font-size: 50px
+}
+p {
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -67,7 +75,7 @@ button:hover {
 
 /* Add padding to container elements */
 .container {
-    padding: 200px;
+    padding: 100px;
 }
 
 /* Clear floats */
