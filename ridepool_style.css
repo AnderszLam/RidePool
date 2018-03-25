@@ -1,0 +1,56 @@
+html {
+    background: rgba(21, 65, 89, 0.2);
+    padding: 0px;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 48px;
+    text-align: center;
+    color: #154159;
+}
+
+h2 {
+    position: absolute;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 24px;
+    color: #154159;
+}
+
+.bluebtn {
+    background-color: #154159;
+    font-family: Lato;
+    font-weight:900;
+    color: #ffffff;
+    border-radius: 10px;
+    border:1px solid #154159;
+}
+
+select {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+input {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
