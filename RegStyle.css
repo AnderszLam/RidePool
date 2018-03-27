@@ -18,6 +18,14 @@ p {
     font-size: 25px;
 }
 
+form {
+    width:30px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px ;
+}
+
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
