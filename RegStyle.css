@@ -3,7 +3,15 @@ body {font-family: Arial;}
 * {box-sizing: border-box}
 
 h1 {
-    font-size: 50px
+    width: 1350px;
+    font-size: 50px;
+    color: white;
+    background-color: #59B2E0;
+    text-align: center;
+    border: 1px solid: #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
 }
 p {
     font-family: Helvetica;
