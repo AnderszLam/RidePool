@@ -1,0 +1,43 @@
+<?php include('server.php') ?>
+
+<!DOCTYPE html>
+<html>
+<link rel = "stylesheet" type="text/css" href="RegStyle.css"/>
+<body>
+
+<form method="post" action="register.php">
+  <div class="container">
+    <h1>Login Form</h1>
+    <hr>
+
+
+    <div class="loginform">	
+    	<div class="input-group">
+    	<label for="username"><b>Username</b></label>
+    	<input type="text" placeholder="Enter Username" name="username" required>
+    	</div>
+
+
+	    <div class="input-group">
+	    <label for="pass"><b>Password</b></label>
+	    <input type="password" placeholder="Enter Password" name="pass" required>
+	    </div>
+	    
+	    <label>
+	      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+	    </label>
+	    
+	    <br>
+
+	</div>
+
+    <div class="acceptlogin">
+      <button type="submit" class="signupbtn">Login</button>
+      <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
+
