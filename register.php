@@ -1,3 +1,5 @@
+<?php include('server.php'); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +10,7 @@
 </head>
 
 <body>
-    <form action="/action_page.php">
+    <form method="post" action="register.php">
         <div class="container">
             <h1>REGISTRATION</h1>
             <div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;>
