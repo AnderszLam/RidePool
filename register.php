@@ -41,8 +41,14 @@
                     </label>
                     <input style="position: absolute; left: 50%; top: 359px;transform: translate(50px,0);"type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
                 </form>
-                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" class="signupbtn">SIGN UP</button>
-                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" class="cancelbtn">CANCEL</button>
+
+
+                <!-- buttons in php signup form -->
+
+                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" name="signup" class="signupbtn">SIGN UP</button>
+
+
+                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" name="cancel" class="cancelbtn">CANCEL</button>
             </div>                
         </div>
     </form>
