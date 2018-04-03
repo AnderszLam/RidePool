@@ -1,3 +1,7 @@
+<?php 
+include('server.php'); 
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +12,7 @@
 </head>
 
 <body>
-    <form action="/action_page.php">
+    <form method="post" action="register.php">
         <div class="container">
             <h1>REGISTRATION</h1>
             <div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;>
@@ -16,7 +20,7 @@
                     <label style="position: absolute; left: 50%; top: 10px;transform: translate(-250px,0);" for="username"><h2>USERNAME</h2></label>
                     <input style="position: absolute; left: 50%; top: 60px;transform: translate(-250px,0);" type="text" placeholder="Enter Username" name="username" required>
 
-                    <label style="position: absolute; left: 50%; top: 10px;transform: translate(50px,0);" for="email"><h2>EMAIL</h2></label>
+                    <label style="position: absolute; left: 50%; top: 10px;transform: translate(50px,0);" for="email"><h2>EM    AIL</h2></label>
                     <input style="position: absolute; left: 50%; top:60px;transform: translate(50px,0);" type="text" placeholder="Enter Email" name="email" required>
 
                     <label style="position: absolute; left: 50%; top: 110px;transform: translate(-250px,0);" for="pass"><h2>PASSWORD</h2></label>
@@ -30,7 +34,7 @@
 
                     <label style="position: absolute; left: 50%; top: 210px;transform: translate(50px,0);" for="lname"><h2>LAST NAME</h2></label>
 
-                    <input style="position: absolute; left: 50%; top: 260px;transform: translate(50px,0);" type="text" placeholder="Enter Last Name" name="lname" required>                    
+                    <input style="position: absolute; left: 50%; top: 260px;transform: translate(50px,0);" type="text" placeholder="Enter Last Name" name="lname" required>
 
                     <label style="position: absolute; left: 50%; top: 310px;transform: translate(-250px,0);" for="phone"><h2>PHONE</h2></label>
                     <input style="position: absolute; left: 50%; top: 360px;transform: translate(-250px,0);" type="text" placeholder="Enter Phone" name="phone" required>
@@ -39,8 +43,14 @@
                     </label>
                     <input style="position: absolute; left: 50%; top: 359px;transform: translate(50px,0);"type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
                 </form>
-                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" class="signupbtn">SIGN UP</button>
-                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" class="cancelbtn">CANCEL</button>
+
+
+                <!-- buttons in php signup form -->
+
+                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" name="signup" class="signupbtn">SIGN UP</button>
+
+
+                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" name="cancel" class="cancelbtn">CANCEL</button>
             </div>                
         </div>
     </form>
