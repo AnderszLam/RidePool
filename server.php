@@ -1,13 +1,17 @@
 <?php 
 
 	//connect to the rider database
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f8ac1a96cec11053001a948dae68423872c109d1
 	$database = mysqli_connect('localhost','root', '', 'ridepool');
 	
 	//if signup is clicked
 	if (isset($_POST['register'])) {
 		//form fields
+<<<<<<< HEAD
 		//real escape string is used here to avoid special characters (spaces, delimiters)
 		$username = mysql_real_escape_string($_POST['username']);
 		$email = mysql_real_escape_string($_POST['emai']);
@@ -26,6 +30,8 @@
 		}
 
 
+=======
+>>>>>>> f8ac1a96cec11053001a948dae68423872c109d1
 	}
 
 ?>

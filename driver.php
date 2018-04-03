@@ -1,7 +1,8 @@
 <?php
 require_once "user_template.php"
+require_once "main.php"
 
-class driver implements user_template {
+class driver extends main_operations implements user_template {
 	private $from;
 	private $to;
 	private $date;

@@ -1,14 +1,15 @@
 <?php
 require_once "user_template.php"
+require_once "main.php"
 
-class rider implements user_template {
+class rider extends main_operations implements user_template {
 	private $from;
 	private $to;
 	private $date;
 	private $time_1;
 	private $time_2:
 	private $price;
-	public function setPrefs($from, $to, $date, $time_1, $time_2, $price) {
+	public function setPrefs($from, $to, $date, $time_1, $time_2, $price) { //setter
 		 $this->from = $from;
 		 $this->to = $to;
 		 $this->date = $date;
@@ -19,7 +20,8 @@ class rider implements user_template {
 	public function savePrefs(); {
 		
 	}
-	public function getFrom() {
+	//below are getters
+	public function getFrom() { 
 		return $this->from;
 	}
 	public function getTo() {

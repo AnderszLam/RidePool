@@ -1,4 +1,6 @@
-<?php include('server.php') ?>
+<?php 
+include('server.php')
+?>
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +10,7 @@
 
 <form method="post" action="register.php">
   <div class="container">
-    <h1>Login</h1>
-    <hr>
+    <h1>LOGIN</h1>
     <div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;"></div>
 
     <div class="login"> 
@@ -33,8 +34,8 @@
 
 
     <div class="accept">
-      <button type="submit" class="signupbtn" style="position: absolute; top: 350px; left: 43%; width:150px;height:50px;transform: translate(-50%,0);font-size: 18px">Sign Up</button>
-      <button type="button" class="cancelbtn" style="position: absolute; top: 350px; left: 53%; width:150px;height:50px;transform: translate(-50%,0);font-size: 18px">Cancel</button>
+      <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" name="signup" class="signupbtn">SIGN UP</button>
+      <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" name="cancel" class="cancelbtn">CANCEL</button>
     </div>
   </div>
 </form>
