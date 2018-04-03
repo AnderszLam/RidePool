@@ -1,4 +1,6 @@
-<?php include('server.php'); ?>
+<?php 
+include('server.php'); 
+?>
 
 <!DOCTYPE html>
 <html>
@@ -18,7 +20,7 @@
                     <label style="position: absolute; left: 50%; top: 10px;transform: translate(-250px,0);" for="username"><h2>USERNAME</h2></label>
                     <input style="position: absolute; left: 50%; top: 60px;transform: translate(-250px,0);" type="text" placeholder="Enter Username" name="username" required>
 
-                    <label style="position: absolute; left: 50%; top: 10px;transform: translate(50px,0);" for="email"><h2>EMAIL</h2></label>
+                    <label style="position: absolute; left: 50%; top: 10px;transform: translate(50px,0);" for="email"><h2>EM    AIL</h2></label>
                     <input style="position: absolute; left: 50%; top:60px;transform: translate(50px,0);" type="text" placeholder="Enter Email" name="email" required>
 
                     <label style="position: absolute; left: 50%; top: 110px;transform: translate(-250px,0);" for="pass"><h2>PASSWORD</h2></label>
@@ -32,7 +34,7 @@
 
                     <label style="position: absolute; left: 50%; top: 210px;transform: translate(50px,0);" for="lname"><h2>LAST NAME</h2></label>
 
-                    <input style="position: absolute; left: 50%; top: 260px;transform: translate(50px,0);" type="text" placeholder="Enter Last Name" name="lname" required>                    
+                    <input style="position: absolute; left: 50%; top: 260px;transform: translate(50px,0);" type="text" placeholder="Enter Last Name" name="lname" required>
 
                     <label style="position: absolute; left: 50%; top: 310px;transform: translate(-250px,0);" for="phone"><h2>PHONE</h2></label>
                     <input style="position: absolute; left: 50%; top: 360px;transform: translate(-250px,0);" type="text" placeholder="Enter Phone" name="phone" required>
