@@ -1,24 +1,23 @@
 <?php
-require_once "user_template.php"
-require_once "main.php"
+require_once('user_template.php');
+require_once('main.php');
 
 class rider extends main_operations implements user_template {
 	private $from;
 	private $to;
 	private $date;
 	private $time_1;
-	private $time_2:
+	private $time_2;
 	private $price;
-	public function setPrefs($from, $to, $date, $time_1, $time_2, $price) { //setter
+	private $seats;
+	public function setPrefs($from, $to, $date, $time_1, $time_2, $price, $seats) { //setters for all private variables
 		 $this->from = $from;
 		 $this->to = $to;
 		 $this->date = $date;
 		 $this->time_1 = $time_1;
 		 $this->time_2 = $time_2;
 		 $this->price = $price;
-	}
-	public function savePrefs(); {
-		
+		 $this->seats = $seats;
 	}
 	//below are getters
 	public function getFrom() { 
@@ -38,6 +37,9 @@ class rider extends main_operations implements user_template {
 	}
 	public function getPrice() {
 		return $this->price;
+	}
+	public function getSeats() {
+		return $this->seats;
 	}
 }
 
