@@ -1,5 +1,5 @@
 <?php
-final class main {
+class main_operations {
    public static post_ride() {
     
    }
