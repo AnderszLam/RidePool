@@ -1,20 +1,16 @@
-<?php 
-include('server.php'); 
-?>
+<?php include('server.php'); ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title> Ridepool - Registration</title>
+    <title> Ridepool - Registration</title>`
     <link rel="stylesheet" type="text/css" href="ridepool_style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 </head>
 
 <body>
     <form method="post" action="register.php">
-        <!-- display validation errors 
-        <?php include('errors.php'); ?> -->
 
         <div class="container">
             <h1>REGISTRATION</h1>
@@ -22,8 +18,8 @@ include('server.php');
                 <form action="#" target="_blank">
                     <label style="position: absolute; left: 50%; top: 10px;transform: translate(-250px,0);" for="username"><h2>USERNAME</h2></label>
                     <input style="position: absolute; left: 50%; top: 60px;transform: translate(-250px,0);" type="text" placeholder="Enter Username" name="username" required>
-
-                    <label style="position: absolute; left: 50%; top: 10px;transform: translate(50px,0);" for="email"><h2>EM    AIL</h2></label>
+ 
+                    <label style="position: absolute; left: 50%; top: 10px;transform: translate(50px,0);" for="email"><h2>EMAIL</h2></label>
                     <input style="position: absolute; left: 50%; top:60px;transform: translate(50px,0);" type="text" placeholder="Enter Email" name="email" required>
 
                     <label style="position: absolute; left: 50%; top: 110px;transform: translate(-250px,0);" for="pass"><h2>PASSWORD</h2></label>
@@ -36,14 +32,13 @@ include('server.php');
                     <input style="position: absolute; left: 50%; top: 260px;transform: translate(-250px,0);" type="text" placeholder="Enter First Name" name="fname" required>
 
                     <label style="position: absolute; left: 50%; top: 210px;transform: translate(50px,0);" for="lname"><h2>LAST NAME</h2></label>
-
                     <input style="position: absolute; left: 50%; top: 260px;transform: translate(50px,0);" type="text" placeholder="Enter Last Name" name="lname" required>
 
                     <label style="position: absolute; left: 50%; top: 310px;transform: translate(-250px,0);" for="phone"><h2>PHONE</h2></label>
-                    <input style="position: absolute; left: 50%; top: 360px;transform: translate(-250px,0);" type="text" placeholder="Enter Phone" name="phone" required>
-                    <label style="position: absolute; left: 50%; top: 333px;transform: translate(75px,0);">
+                    <input style="position: absolute; left: 50%; top: 360px;transform: translate(-250px,0);" type="text" placeholder="Enter Phone" name="phone" required> 
+<!--                     <label style="position: absol+ute; left: 50%; top: 333px;transform: translate(75px,0);">
                         <h2>REMEMBER ME</h2>
-                    </label>
+                    </label> -->
                     <input style="position: absolute; left: 50%; top: 359px;transform: translate(50px,0);"type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
                 </form>
 

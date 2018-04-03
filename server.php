@@ -1,37 +1,35 @@
 <?php 
 
 	//connect to the rider database
-<<<<<<< HEAD
 
 
-=======
->>>>>>> f8ac1a96cec11053001a948dae68423872c109d1
 	$database = mysqli_connect('localhost','root', '', 'ridepool');
 	
 	//if signup is clicked
 	if (isset($_POST['register'])) {
 		//form fields
-<<<<<<< HEAD
 		//real escape string is used here to avoid special characters (spaces, delimiters)
-		$username = mysql_real_escape_string($_POST['username']);
-		$email = mysql_real_escape_string($_POST['emai']);
-		$pass = mysql_real_escape_string($_POST['pass']);
-		$passr = mysql_real_escape_string($_POST['passr']);
-		$fname = mysql_real_escape_string($_POST['fname']);
-		$lname = mysql_real_escape_string($_POST['lname']);
-		$phone = mysql_real_escape_string($_POST['phone']);
+		$username = mysqli_real_escape_string($database,$_POST['username']);
+		$email = mysqli_real_escape_string($database,$_POST['email']);
+		$pass = mysqli_real_escape_string($database, $_POST['pass']);
+		$passr = mysqli_real_escape_string($database,$_POST['passr']);
+		$fname = mysqli_real_escape_string($database,$_POST['fname']);
+		$lname = mysqli_real_escape_string($database,$_POST['lname']);
+		$phone = mysqli_real_escape_string($database,$_POST['phone']);
+
+		// if ($pass != $passr) {
+		// 	array_push($errors, "passwords do not match")
+		// }
 
 		// if there are no errors, save the user to the database
-		if (count($errors) == 0) {
+
 			$email = md5($email); //encrypt email before storing in database for security
 			$pass = md5($pass); //encrypt password for storing for security
-			$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username','$fname', '$lname', '$email', '$pass', '$phone')";
+			$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username', '$fname', '$lname', '$email', '$pass', '$phone')";
 			mysqli_query($database, $sql);
-		}
 
 
-=======
->>>>>>> f8ac1a96cec11053001a948dae68423872c109d1
+
 	}
 
 ?>
