@@ -1,8 +1,7 @@
 <?php 
 
 	//connect to the rider database
-
-
+	$errors = array();
 	$database = mysqli_connect('localhost','root', '', 'ridepool');
 	
 	//if signup is clicked
@@ -17,19 +16,18 @@
 		$lname = mysqli_real_escape_string($database,$_POST['lname']);
 		$phone = mysqli_real_escape_string($database,$_POST['phone']);
 
-		// if ($pass != $passr) {
-		// 	array_push($errors, "passwords do not match")
-		// }
+		if ($pass != $passr) {
+			array_push($errors, "passwords do not match");
+		}
 
 		// if there are no errors, save the user to the database
 
+		if (count($errors) == 0) {
 			$email = md5($email); //encrypt email before storing in database for security
-			$pass = md5($pass); //encrypt password for storing for security
-			$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username', '$fname', '$lname', '$email', '$pass', '$phone')";
+			$passencr = md5($pass); //encrypt password for storing for security
+			$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username', '$fname', '$lname', '$email', '$passencr', '$phone')";
 			mysqli_query($database, $sql);
-
-
-
+		}
 	}
 
 ?>

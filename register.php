@@ -11,6 +11,8 @@
 
 <body>
     <form method="post" action="register.php">
+        <!-- display validation error -->
+        <?php include ('errors.php'); ?>
 
         <div class="container">
             <h1>REGISTRATION</h1>
