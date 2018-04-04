@@ -16,8 +16,7 @@ if(isset($_POST["ridesearch"])) {
 	$rider = new rider();
 	$rider->setPrefs($from, $to, $date, $time1, $time2, $price, NULL);
 	$results = $rider->search_ride($from, $to, $date, $time1, $time2, $price);
-	echo 'here';
-	echo count($results);
+
 	$generate = new generate_ridelist();
 	$generate->list_search($results);
 } 

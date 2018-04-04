@@ -26,14 +26,14 @@ class main_operations {
 			die("MySQL connection error");
 		
 		$sdate = $date;
-		$query = "SELECT * FROM ride_posts WHERE pickup='$from' and dest='$to'";
+		$query = "SELECT * FROM ride_posts WHERE pickup='$from' AND dest='$to' AND date='$date'";
 		$result = mysqli_query($db, $query);
 		$count = mysqli_num_rows($result);
 		$search_results = array();
-		echo '<p>' . $count . '</p>';
+		
 		if ($count >= 1) {
 			while ($row = mysqli_fetch_array($result)) {
-				if ($row['time'] >= $time1 and $row['time'] <= $time2 and $mprice >= $row['price']) {
+				if ($row['time'] >= $time1 && $row['time'] <= $time2 && $mprice >= $row['price']) {
 					array_push($search_results, $row);
 				}
 			}
