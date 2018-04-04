@@ -16,7 +16,7 @@
 
         <div class="container">
             <h1>REGISTRATION</h1>
-            <div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;>
+           <div class="background-bar" style="position: absolute; ; left:0px; top:100px ;width:100%;">
                 <form action="#" target="_blank">
                     <label style="position: absolute; left: 50%; top: 10px;transform: translate(-250px,0);" for="username"><h2>USERNAME</h2></label>
                     <input style="position: absolute; left: 50%; top: 60px;transform: translate(-250px,0);" type="text" placeholder="Enter Username" name="username" required>
@@ -38,10 +38,6 @@
 
                     <label style="position: absolute; left: 50%; top: 310px;transform: translate(-250px,0);" for="phone"><h2>PHONE</h2></label>
                     <input style="position: absolute; left: 50%; top: 360px;transform: translate(-250px,0);" type="text" placeholder="Enter Phone" name="phone" required> 
-<!--                     <label style="position: absol+ute; left: 50%; top: 333px;transform: translate(75px,0);">
-                        <h2>REMEMBER ME</h2>
-                    </label> -->
-                    <input style="position: absolute; left: 50%; top: 359px;transform: translate(50px,0);"type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
                 </form>
 
 

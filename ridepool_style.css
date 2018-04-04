@@ -7,7 +7,7 @@ html {
     margin:0px;
     width:100%;
     background-color: #E5E5E5;
-    height: 500px;
+    height: 75vh;
     overflow-y: scroll;
 }
 
@@ -57,6 +57,7 @@ h3 {
     border: 1px solid #154159;
     text-transform: uppercase;
     border-radius: 10px;
+    text-align:center; 
 }
 
 select {
