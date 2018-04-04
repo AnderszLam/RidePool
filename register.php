@@ -50,7 +50,7 @@
                 <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" name="register" class="signupbtn">SIGN UP</button>
 
 
-                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" name="cancel" class="cancelbtn">CANCEL</button>
+                <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" name="cancelreg" class="cancelbtn" onClick="document.location.href='login.php'">CANCEL</button>
             </div>                
         </div>
     </form>
