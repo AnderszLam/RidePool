@@ -32,7 +32,7 @@
 		// if there are no errors, save the user to the database
 
 		if (count($errors) == 0) {
-			$email = md5($email); //encrypt email before storing in database for security
+			//$email = md5($email); //encrypt email before storing in database for security
 			$passencr = md5($pass); //encrypt password for storing for security
 			$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username', '$fname', '$lname', '$email', '$passencr', '$phone')";
 			mysqli_query($database, $sql);
