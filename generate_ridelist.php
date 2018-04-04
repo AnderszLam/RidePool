@@ -1,13 +1,4 @@
 
-<head>
-    		<title> Ridepool - Find a Ride</title>
-    		<link rel="stylesheet" type="text/css" href="ridepool_style.css">
-    		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
-			</head>
-			<body>
-    			<h1>RIDES AVAILABLE</h1>
-    			<!--BACKGROUND BAR-->
-    			<div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;"></div>
 <?php
 final class generate_ridelist {
    public static function list_all() {
@@ -19,15 +10,18 @@ final class generate_ridelist {
 		$query = "SELECT * FROM ride_posts";
 		$result = mysqli_query($db, $query);
 		$count = mysqli_num_rows($result);
+		echo'<head>
+    		<title> Ridepool - Find a Ride</title>
+    		<link rel="stylesheet" type="text/css" href="ridepool_style.css">
+    		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+			</head>
+			<body>
+    			<h1>RIDES AVAILABLE</h1>
+    			<!--BACKGROUND BAR-->
+    			<div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;"></div>';
 		echo '<table style=\'position: absolute; left: 50%; top: 110px; transform: translate(-50%,0);\'>';
-		echo '<tr>
-            <th> PICKUP </th>
-            <th> DESTINATION </th>
-            <th> DATE </th>
-            <th> TIME </th>
-            <th> PRICE </th>
-            <th> SEATS LEFT </th>
-            <th> SELECT </th>
+		echo '<tr> <th> PICKUP </th> <th> DESTINATION </th> <th> DATE </th>
+            <th> TIME </th> <th> PRICE </th> <th> SEATS LEFT </th> <th> SELECT </th>
         	</tr>';
 		if ($count >= 1) {
 			//$row = mysqli_fetch_array($result)
@@ -55,6 +49,15 @@ final class generate_ridelist {
    public static function list_search($list) {
 		$rows = count($list);
 		$indexer = $rows - 1;
+		echo'<head>
+    		<title> Ridepool - Find a Ride</title>
+    		<link rel="stylesheet" type="text/css" href="ridepool_style.css">
+    		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+			</head>
+			<body>
+    			<h1>RIDES AVAILABLE</h1>
+    			<!--BACKGROUND BAR-->
+    			<div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;"></div>';
 		echo '<table style=\'position: absolute; left: 50%; top: 110px; transform: translate(-50%,0);\'>';
 				echo '<tr>
             <th> PICKUP </th>
@@ -63,6 +66,7 @@ final class generate_ridelist {
             <th> TIME </th>
             <th> PRICE </th>
             <th> SEATS LEFT </th>
+            <th> SELECT </th>
         	</tr>';
 		while($indexer >= 0) {
 			echo '<tr class="rows">';
@@ -72,7 +76,7 @@ final class generate_ridelist {
 			echo '<td>' . $list[$indexer]['time'] . '</td>';
 			echo '<td>' . $list[$indexer]['price'] . '</td>';
 			echo '<td>' . $list[$indexer]['seats'] . '</td>';
-			echo '<td> <a href="#"><div>SELECT</div></a></td>';
+			echo '<td> <a href="#"><form action="dashbboard.php" method="post"><input type="submit" name="selectride" class="bluebtn"></input></form></a></td>';
 			echo '</tr>';
 			$indexer = $indexer - 1;
 		}
