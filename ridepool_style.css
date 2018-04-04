@@ -3,6 +3,21 @@ html {
     padding: 0px;
 }
 
+p {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 48px;
+    text-align: center;
+    color: #154159;
+}
+
 h1 {
     position: absolute;
     left: 50%;

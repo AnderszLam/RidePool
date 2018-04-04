@@ -31,10 +31,11 @@
   </div>
 
     <div class="accept">
-     <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(-100px,0); padding:15px;" type="submit" name="login" class="loginbtn">LOGIN</button>
+     <button class = "bluebtn" style="position: absolute; left: 50%; top: 350px;transform: translate(-100px,0); padding:15px;" type="submit" name="login" class="loginbtn">LOGIN</button>
 
+      <button class = "bluebtn" style="position: absolute; left: 50%; top: 350px;transform: translate(0,0); padding:15px;" type="button" name="cancel" class="cancelbtn">CANCEL</button>
 
-      <button class = "bluebtn" style="position: absolute; left: 50%; top: 400px;transform: translate(0,0); padding:15px;" type="button" name="cancel" class="cancelbtn">CANCEL</button>
+      <p style="position: absolute; left: 42%; top: 400px;transform: translate(0,0); padding:15px;"> Sign up and register!! <a href ="register.php">REGISTER</a> </p>
     </div>
   </div>
 </form>
