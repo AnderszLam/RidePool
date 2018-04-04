@@ -1,3 +1,8 @@
+<head>
+    <title> Ridepool - Find a Ride</title>
+    <link rel="stylesheet" type="text/css" href="ridepool_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+</head>
 <?php
 final class generate_ridelist {
    public static function list_all() {
@@ -11,6 +16,14 @@ final class generate_ridelist {
 		$count = mysqli_num_rows($result);
 		
 		echo '<table style=\'position: absolute; left: 50%; top: 110px; transform: translate(-50%,0);\'>';
+		echo '<tr>
+            <th> PICKUP </th>
+            <th> DESTINATION </th>
+            <th> DATE </th>
+            <th> TIME </th>
+            <th> PRICE </th>
+            <th> SEATS LEFT </th>
+        	</tr>';
 		if ($count >= 1) {
 			//$row = mysqli_fetch_array($result)
 			$rows = mysqli_num_rows($result);
