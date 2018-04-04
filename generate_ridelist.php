@@ -54,7 +54,7 @@ final class generate_ridelist {
    public static function list_search($list) {
 		$rows = count($list);
 		$indexer = $rows - 1;
-		echo '<table style=\'position: absolute; left: 50%; top: 110px; transform: translate(-50%,0);\'>';
+		echo '<table style=\'position: absolute; left: 50%; top: 10px; transform: translate(-50%,0);\'>';
 			echo '<tr>
             <th> PICKUP </th>
             <th> DESTINATION </th>

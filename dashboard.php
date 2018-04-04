@@ -38,6 +38,9 @@ else if(isset($_POST["ridepost"])) {
 	$generate = new generate_ridelist();
 	$generate->list_all();
 	
+} else if (isset($_POST["showallrides"])){
+	$generate = new generate_ridelist();
+	$generate->list_all();
 }
 
 
