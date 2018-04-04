@@ -2,7 +2,7 @@
 <?php
 if(isset($_POST["selectride"])) {
 	include('server.php');
-	$userid = $_SESSION['userid_post'];
+	$userid = $_POST['row_id'];
 	echo '<p>' . $userid . '</p>';
 	$db = mysqli_connect("localhost", "root", "", "ridepool");
 	if (!$db) 
@@ -14,7 +14,8 @@ if(isset($_POST["selectride"])) {
 		
 	if ($count == 1) {
 		$row = mysqli_fetch_row($result);
-		$email_print = md5($row['email']);
+		//echo $row;
+		$email_print = $row['email'];
 		
 		echo '<p>' . $email_print . '</p>';
 		echo '<p>' . $row['phone'] . '</p>';
