@@ -14,15 +14,19 @@
     <form action="dashboard.php" method = "post">
         <!--TO/FROM-->
         <h2 style="position: absolute; left: 50%; top: 110px;transform: translate(-250px,0);">FROM</h2>
-        <input list="schools" name="from" style="position: absolute; left: 50%; top: 160px;transform: translate(-250px,0);">
-        <datalist id="schools">
-            <option value="Wilfrid Laurier University"></option>
-            <option value="University of Waterloo"></option>
-            <option value="University of Toronto"></option>
-            <option value="University of Western Ontario"></option>
-        </datalist>
+        <select name="from" style="position: absolute; left: 50%; top: 160px;transform: translate(-250px,0);">        
+            <option value="Wilfrid Laurier University">Wilfrid Laurier University</option>
+            <option value="University of Waterloo">University of Waterloo</option>
+            <option value="University of Toronto">University of Toronto</option>
+            <option value="University of Western Ontario">University of Western Ontario</option>
+        </select>
         <h2 style="position: absolute; left:50%; top: 110px; transform: translate(50px,0);">TO</h2>
-        <input list="schools" name="dest" style="position: absolute; left: 50%; top: 160px;transform: translate(50px,0);">
+        <select name="dest" style="position: absolute; left: 50%; top: 160px;transform: translate(50px,0);">
+            <option value="Wilfrid Laurier University">Wilfrid Laurier University</option>
+            <option value="University of Waterloo">University of Waterloo</option>
+            <option value="University of Toronto">University of Toronto</option>
+            <option value="University of Western Ontario">University of Western Ontario</option>
+        </select>
         <!-- DATE/TIME-->
         <h2 style="position: absolute; left: 50%; top: 210px;transform: translate(-250px,0);">DATE</h2>
         <input type="date" name="date" style="position: absolute; left: 50%; top: 260px;transform: translate(-250px,0);">
