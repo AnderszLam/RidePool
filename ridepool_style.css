@@ -81,9 +81,10 @@ tr {
 tr:nth-child(1) {
     border-top: none;
 }
- tr:nth-last-child(1){
+
+tr:nth-last-child(1){
     border-bottom: none;
- }
+}
 
 .rows:hover{
     background-color: #222222;
