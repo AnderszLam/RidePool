@@ -35,7 +35,7 @@
 
       <button class = "bluebtn" style="position: absolute; left: 50%; top: 350px;transform: translate(0,0); padding:15px;" type="button" name="cancellog" class="cancelbtn">CANCEL</button>
 
-      <h3 style="position: absolute; left: 40%; top: 400px;transform: translate(0,0); padding:15px;"> Sign up and register!! <a href ="register.php">REGISTER</a> </h3>
+      <h3 style="position: absolute; left: 42%; top: 400px;transform: translate(0,0); padding:15px;"> Sign up and register!! <a href ="register.php" style="position: absolute; left: 15%; top: 30px; transform: translate(0,0); padding:15px;">REGISTER</a> </h3>
     </div>
   </div>
 </form>
