@@ -34,11 +34,33 @@
 		if (count($errors) == 0) {
 			//$email = md5($email); //encrypt email before storing in database for security
 			$passencr = md5($pass); //encrypt password for storing for security
-			$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username', '$fname', '$lname', '$email', '$passencr', '$phone')";
-			mysqli_query($database, $sql);
+			//$sql = "INSERT INTO users (username, fname, lname, email, password, phone) VALUES ('$username', '$fname', '$lname', '$email', '$passencr', '$phone')";
+
+			$name = $_POST['username'];
+
+ 
+			if ($stmt = mysqli_prepare($database, "INSERT INTO users (username, fname, lname, email, password, phone) VALUES (?, ?, ?, ?, ?, ?)")) {
+ 
+    			// Bind the variables to the parameter as strings. 
+   				mysqli_stmt_bind_param($stmt, "sssssi", $username, $fname, $lname, $email, $passencr, $phone);
+ 
+    			// Execute the statement.
+    			mysqli_stmt_execute($stmt);
+ 
+    			// Close the prepared statement.
+    			mysqli_stmt_close($stmt);
+    			echo 'posted';
+    			header('location: login.php'); // redirect to ridechoice
+ 
+			}
+
+
+
+
+			//mysqli_query($database, $sql);
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are logged in";
-			header('location: login.php'); // redirect to ridechoice
+			//header('location: login.php'); // redirect to ridechoice
 		}
 	}
 
