@@ -85,12 +85,14 @@ tr:nth-child(1) {
     border-bottom: none;
  }
 
+.rows:hover{
+    background-color: #222222;
+}
+
 tr:nth-child(even) {
     background-color: #FFFFFF;
 }
-tr:hover{
-    background-color: #D0D9DD;
-}
+
 
 table {
     border-collapse: collapse;
