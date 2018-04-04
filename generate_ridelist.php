@@ -3,6 +3,11 @@
     <link rel="stylesheet" type="text/css" href="ridepool_style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 </head>
+<body>
+    <h1>RIDES AVAILABLE</h1>
+    <!--BACKGROUND BAR-->
+    <div style="position: absolute; ; left:0px; top:100px ;width:100%; height: 500px; background-color: #E5E5E5; padding:0px; margin:0px;"></div>
+
 <?php
 final class generate_ridelist {
    public static function list_all() {
@@ -31,7 +36,7 @@ final class generate_ridelist {
 			while($indexer >= 0) {
 				mysqli_data_seek($result, $indexer);
 				$row = mysqli_fetch_array($result);
-				echo '<tr>';
+				echo '<tr class="rows">';
 				echo '<td>' . $row['pickup'] . '</td>';
 				echo '<td>' . $row['dest'] . '</td>';
 				echo '<td>' . $row['date'] . '</td>';
