@@ -70,7 +70,7 @@
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "you logged in";
 			echo "hey faggot";
-			header('location: ridepost.html');
+			header('location: ridechoice.html');
 		}else {
 			array_push($errors, "wrong information");
 			header("location: login.php");

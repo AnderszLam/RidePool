@@ -1,5 +1,5 @@
 <head>
-    		<title> Ridepool - Find a Ride</title>
+    		<title> Ridepool - Rides Available</title>
     		<link rel="stylesheet" type="text/css" href="ridepool_style.css">
     		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 			</head>
