@@ -77,18 +77,14 @@ final class generate_ridelist {
 			echo '<td>' . $list[$indexer]['time'] . '</td>';
 			echo '<td>' . $list[$indexer]['price'] . '</td>';
 			echo '<td>' . $list[$indexer]['seats'] . '</td>';
-			echo '<td> <a href="#"><form action="user_info.php" method="post"><input type="submit" name="selectride" class="bluebtn"value="SELECT" ></input></form></a></td>';
+			echo '<td> <a href="#"><form action="user_info.php" method="post"> <input type="hidden" value="'.$list[$indexer]['poster']. '" name="row_id"/><input type="submit" name="selectride" class="bluebtn"value="SELECT" ></input></form></a></td>';
 			echo '</tr>';
 			$indexer = $indexer - 1;
 		}
 		echo '</table>';
 		echo '</div>';
-		echo'</body>
-		<footer>
-    <a href="ridechoice.html">
-        <div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div>
-</footer>';
-		mysqli_close($db);
+			echo'</body>
+		<footer><a href="ridechoice.html"><div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div></footer>';	
    }
 
 }

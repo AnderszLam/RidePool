@@ -32,5 +32,7 @@ if(isset($_POST["selectride"])) {
 		echo '<tr><td>Phone:</td><td>' . $row[6] . '</td></tr>';
 	}
 }
+	echo'</body>
+		<footer><a href="ridechoice.html"><div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div></footer>';
 ?>
 </html>
