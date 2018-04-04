@@ -1,12 +1,16 @@
 <?php
+
+
 class main_operations {
    public static function post_ride($from, $to, $date, $time, $price, $seats) {
 		//session_start();
 		$db = mysqli_connect("localhost", "root", "", "ridepool");
 		if (!$db) 
 			die("MySQL connection error");
+		include('server.php');
+		$userid = $_SESSION['userid'];
 		
-		$inuid = 2;
+		$inuid = $userid;
 		$infrom = mysqli_real_escape_string($db, $from);
 		$into = mysqli_real_escape_string($db, $to);
 		$indate = mysqli_real_escape_string($db, $date);

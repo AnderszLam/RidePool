@@ -38,7 +38,7 @@
 			mysqli_query($database, $sql);
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are logged in";
-			header('location: ridechoice.html'); // redirect to ridechoice
+			header('location: login.php'); // redirect to ridechoice
 		}
 	}
 
@@ -70,7 +70,7 @@
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "you logged in";
 			echo "hey faggot";
-			//header('location: ridechoice.html');
+			header('location: ridepost.html');
 		}else {
 			array_push($errors, "wrong information");
 			header("location: login.php");

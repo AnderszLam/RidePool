@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-session_start();
+// session_start();
 require_once('generate_ridelist.php');
 require_once('driver.php');
 require_once('rider.php');
