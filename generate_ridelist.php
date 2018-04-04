@@ -38,7 +38,7 @@ final class generate_ridelist {
 				echo '<td>' . $row['time'] . '</td>';
 				echo '<td>' . $row['price'] . '</td>';
 				echo '<td>' . $row['seats'] . '</td>';
-				echo '<td> <a href="#"><form action="dashbboard.php" method="post"><input type="submit" name="selectride" class="bluebtn"></input></form></a></td>';
+				echo '<td> <a href="#"><form action="dashbboard.php" method="post"><input type="submit" name="selectride" value="SELECT" class="bluebtn"></input></form></a></td>';
 				echo '</tr>';
 				
 				$indexer = $indexer - 1;
@@ -71,7 +71,7 @@ final class generate_ridelist {
 			echo '<td>' . $list[$indexer]['time'] . '</td>';
 			echo '<td>' . $list[$indexer]['price'] . '</td>';
 			echo '<td>' . $list[$indexer]['seats'] . '</td>';
-			echo '<td> <a href="#"><form action="dashbboard.php" method="post"><input type="submit" name="selectride" class="bluebtn"></input></form></a></td>';
+			echo '<td> <a href="#"><form action="dashbboard.php" method="post"><input type="submit" name="selectride" class="bluebtn"value="SELECT" ></input></form></a></td>';
 			echo '</tr>';
 			$indexer = $indexer - 1;
 		}
