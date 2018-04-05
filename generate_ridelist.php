@@ -6,7 +6,7 @@
 			<body>
     			<h1>RIDES AVAILABLE</h1>
     			<!--BACKGROUND BAR-->
-    			<div class="background-bar" style="position: absolute; ; left:0px; top:100px;">
+    			<div class="background-bar" style="position: absolute; ; left:0px; top:100px;    overflow-y: scroll;">
 <?php
 final class generate_ridelist {
    public static function list_all() {
@@ -15,7 +15,7 @@ final class generate_ridelist {
 		if (!$db) 
 			die("MySQL connection error");
 		
-		$query = "SELECT * FROM ride_posts";
+		$query = "SELECT * FROM ride_posts WHERE seats > 0";
 		$result = mysqli_query($db, $query);
 		$count = mysqli_num_rows($result);
 		
@@ -39,7 +39,12 @@ final class generate_ridelist {
 				echo '<td>' . $row['price'] . '</td>';
 				echo '<td>' . $row['seats'] . '</td>';
 				echo '<td> <a href="#"><form action="user_info.php" method="post">
-				<input type="hidden" value="'.$row['poster'].'" name="row_id"/><input type="submit" name="selectride" value="SELECT" class="bluebtn"></input></form></a></td>';
+				<input type="hidden" value="'.$row['poster'].'" name="row_id"/>
+				<input type="hidden" value="'.$row['postID'].'" name="post_id"/>
+
+				<input type="submit" name="selectride" value="SELECT" class="bluebtn"></input>
+				
+				</form></a></td>';
 				echo '</tr>';
 				
 				$indexer = $indexer - 1;
@@ -77,7 +82,10 @@ final class generate_ridelist {
 			echo '<td>' . $list[$indexer]['time'] . '</td>';
 			echo '<td>' . $list[$indexer]['price'] . '</td>';
 			echo '<td>' . $list[$indexer]['seats'] . '</td>';
-			echo '<td> <a href="#"><form action="user_info.php" method="post"> <input type="hidden" value="'.$list[$indexer]['poster']. '" name="row_id"/><input type="submit" name="selectride" class="bluebtn"value="SELECT" ></input></form></a></td>';
+			echo '<td><form action="user_info.php" method="post"> 
+				<input type="hidden" value="'.$list[$indexer]['poster']. '" name="row_id"/>
+				<input type="hidden" value="'.$list[$indexer]['postID']. '" name="post_id"/>
+				<input type="submit" name="selectride" class="bluebtn"value="SELECT" ></input></form></td>';
 			echo '</tr>';
 			$indexer = $indexer - 1;
 		}

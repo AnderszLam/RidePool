@@ -8,7 +8,6 @@ html {
     width:100%;
     background-color: #E5E5E5;
     height: 75vh;
-    overflow-y: scroll;
 }
 
 
@@ -28,11 +27,8 @@ h1 {
 }
 
 h2 {
-    position: absolute;
     font-family: Lato;
-    font-style: normal;
     font-weight: 900;
-    line-height: normal;
     font-size: 24px;
     width:300px;
     color: #154159;

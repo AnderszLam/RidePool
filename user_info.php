@@ -30,9 +30,17 @@ if(isset($_POST["selectride"])) {
 		echo'<tr><td>Email:</td><td>' . $row[4] . '</td></tr>';
 		//phone
 		echo '<tr><td>Phone:</td><td>' . $row[6] . '</td></tr>';
+		echo '</table>';
 	}
 }
-	echo'</body>
-		<footer><a href="ridechoice.html"><div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div></footer>';
+
+
+	echo'<form action="confirm.php" method = "post">
+		<input type="hidden" value="'.$_POST['post_id'].'" name = "post_id"/> 
+		<input type="submit" class="bluebtn" style="position:absolute; left:50%; padding:10px; width:150px; top: 200px;transform:translate(-50%,0)" name = "confirmride" value="CONFIRM RIDE"/>
+		</form>
+	</div>
+	</body>
+		<footer><a href="ridechoice.html"><div class="bluebtn" style="position:absolute; left:50%;  padding:10px; width:75px; top:90%; transform:translate(-50%,0)">HOME</div></footer>';
 ?>
 </html>

@@ -30,7 +30,7 @@ class main_operations {
 			die("MySQL connection error");
 		
 		$sdate = $date;
-		$query = "SELECT * FROM ride_posts WHERE pickup='$from' AND dest='$to' AND date='$date'";
+		$query = "SELECT * FROM ride_posts WHERE pickup='$from' AND dest='$to' AND date='$date' AND seats > 0";
 		$result = mysqli_query($db, $query);
 		$count = mysqli_num_rows($result);
 		$search_results = array();
