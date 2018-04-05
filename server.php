@@ -38,7 +38,7 @@
 
 			$name = $_POST['username'];
 
- 
+ 			//PREVENT SQL INJECTION
 			if ($stmt = mysqli_prepare($database, "INSERT INTO users (username, fname, lname, email, password, phone) VALUES (?, ?, ?, ?, ?, ?)")) {
  
     			// Bind the variables to the parameter as strings. 
@@ -49,7 +49,7 @@
  
     			// Close the prepared statement.
     			mysqli_stmt_close($stmt);
-    			echo 'posted';
+    			//echo 'posted';
     			header('location: login.php'); // redirect to ridechoice
  
 			}
@@ -75,6 +75,7 @@
 			//get information of the user being logged in
 			$userinfo = "SELECT * from users WHERE username = '$username' ";
 			$userResults = mysqli_query($database, $userinfo);
+
 			while ($row = mysqli_fetch_array($userResults)) {
 				$_SESSION['userid'] = $row[0];
 				$_SESSION['username'] = $row[1];
