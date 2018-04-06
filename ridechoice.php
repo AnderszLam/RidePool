@@ -21,6 +21,16 @@
             <p style="text-align: center;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%);">TO DRIVE</p>
         </div>
     </a>
+
+    <div class="Logout">
+        <?php if (isset($_SESSION['username'])): ?>
+            <p> welcome </p>
+            <p><a href="" style="color:red;">Logout</a></p>
+        <?php endif ?>
+    </div>
+
+
+
 </body>
 
 </html>

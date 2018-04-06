@@ -93,7 +93,7 @@
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "you logged in";
 			echo "hey faggot";
-			header('location: ridechoice.html');
+			header('location: ridechoice.php');
 		}else {
 			array_push($errors, "wrong information");
 			header("location: login.php");
