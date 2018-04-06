@@ -11,21 +11,23 @@
 
     <h1>WHAT ARE YOU LOOKING FOR?</h1>
     <div class="background-bar" style="position: absolute; ; left:0px; top:100px;">
-    <a href="ridesearch.html">
+    <a href="ridesearch.php">
         <div class="bluebtn" style=";position: absolute; top: 70px; left: 25%; width:20%;height:70%;">
             <p style="text-align: center;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%);" )>A SEAT</p>
         </div>
     </a>
-    <a href="ridepost.html">
+    <a href="ridepost.php">
         <div class="bluebtn" style="position: absolute; top: 70px; left: 55%; width:20%;height:70%;">
             <p style="text-align: center;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%);">TO DRIVE</p>
         </div>
     </a>
 
     <div class="Logout">
-        <?php if (isset($_SESSION['username'])): ?>
-            <p> welcome </p>
-            <p><a href="" style="color:red;">Logout</a></p>
+
+        <?php include('server.php');
+            if (isset($_SESSION['username'])): ?>
+            <p>Logged in as: <?php echo $_SESSION['username'];?>
+            <p><a href=login.php?logout='1'" style="color:red;">Logout</a></p>
         <?php endif ?>
     </div>
 
