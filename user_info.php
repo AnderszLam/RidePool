@@ -7,19 +7,20 @@
 			<body>
     			<h1>YOUR DRIVER</h1>
     			<!--BACKGROUND BAR-->
-    			<div class="background-bar" style="position: absolute; ; left:0px; top:100px;">
-    				
-    <div class="logout">
+    			    <div class="logout">
         <?php include('server.php');
             if (isset($_SESSION['username'])): ?>
             <p>Logged In As: <?php echo $_SESSION['username'];?>
             <p><a href=login.php?logout='1' class="bluebtn" style="padding: 10px; text-decoration: none">Logout</a></p>
         <?php endif ?>
     </div>
+    			<div class="background-bar" style="position: absolute; ; left:0px; top:100px;">
+
+
 
 <?php
 if(isset($_POST["selectride"])) {
-	include('server.php');
+
 	$userid = $_POST['row_id'];
 	//echo '<p>' . $userid . '</p>';
 	$db = mysqli_connect("localhost", "root", "", "ridepool");
