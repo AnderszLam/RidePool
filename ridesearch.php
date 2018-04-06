@@ -46,13 +46,11 @@
         <input type="submit" value = "SEARCH" name="ridesearch" class="bluebtn" style="position: absolute; top: 460px; left: 50%; width:150px;height:30px;transform: translate(-50%,0);font-size: 18px">
         </input>
     </a>
-
-    <div class="Logout">
-
+    <div class="logout">
         <?php include('server.php');
             if (isset($_SESSION['username'])): ?>
-            <p>Logged in as: <?php echo $_SESSION['username'];?>
-            <p><a href=login.php?logout='1'" style="color:red;">Logout</a></p>
+            <p>Logged In As: <?php echo $_SESSION['username'];?>
+            <p><a href=login.php?logout='1' class="bluebtn" style="padding: 10px; text-decoration: none">Logout</a></p>
         <?php endif ?>
     </div>
 

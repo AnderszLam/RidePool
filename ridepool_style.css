@@ -45,6 +45,19 @@ h3 {
     color: #154159;
 }
 
+.logout {
+    position:absolute;
+    right: 50px;
+    font-family: Lato;
+    font-weight: 400; 
+    text-decoration: none;
+}
+.bluebtn:hover{
+
+    background-color: #091E29;
+    border: 1px solid #091E29;
+}
+
 .bluebtn {
     background-color: #154159;
     font-family: Lato;
@@ -55,6 +68,8 @@ h3 {
     border-radius: 10px;
     text-align:center; 
 }
+
+
 
 select {
     font-family: Lato;
