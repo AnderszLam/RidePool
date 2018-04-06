@@ -25,9 +25,18 @@
 		$lname = mysqli_real_escape_string($database,$_POST['lname']);
 		$phone = mysqli_real_escape_string($database,$_POST['phone']);
 
+		$userQuery = "SELECT * FROM users where username = '$username'";
+		$results = mysqli_query($database,$userQuery);
+
+		if (mysqli_num_rows($results) >= 1) {
+			array_push($errors, "username already exists");
+		}
+
 		if ($pass != $passr) {
 			array_push($errors, "passwords do not match");
 		}
+
+
 
 		// if there are no errors, save the user to the database
 
@@ -53,9 +62,6 @@
     			header('location: login.php'); // redirect to ridechoice
  
 			}
-
-
-
 
 			//mysqli_query($database, $sql);
 			$_SESSION['username'] = $username;
