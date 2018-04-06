@@ -33,10 +33,10 @@
     <div class="accept">
      <button class = "bluebtn" style="position: absolute; left: 50%; top: 350px; width: 80px; transform: translate(-50%,0); padding:15px;" type="submit" name="login" class="loginbtn">LOGIN</button>
 
-      <h2 style="text-align:center; position: absolute; left: 50%; top: 400px; width: 400px; transform: translate(-200px,0); padding:15px;">CREATE AN ACCOUNT</h2>
+      <h2 style="text-align:center; position: absolute; text-align: center;left: 50%; top: 400px;transform: translate(-50%,0); padding:15px;">CREATE AN ACCOUNT</h2>
 
       <a href="register.php">
-        <div class="bluebtn" style="position: absolute; left: 50%; top: 475px;transform: translate(-50%,0); padding:15px;">REGISTER</div>
+        <div class="bluebtn" style="position: absolute; text-align: center; left: 50%; top: 475px;transform: translate(-50%,0); padding:15px;">REGISTER</div>
       </a>
     </div>
   </div>

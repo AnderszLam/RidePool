@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2018 at 07:51 AM
+-- Generation Time: Apr 06, 2018 at 07:29 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -58,7 +58,12 @@ INSERT INTO `ride_posts` (`postID`, `poster`, `pickup`, `dest`, `date`, `time`, 
 (144, '5', 'Wilfrid Laurier University', 'University of Western Ontario', '2018-04-06', '14:00:00', 10, 1),
 (145, '6', 'University of Waterloo', 'University of Western Ontario', '2018-04-06', '15:00:00', 20, 4),
 (146, '4', 'University of Toronto', 'Wilfrid Laurier University', '2018-04-07', '16:00:00', 10, 4),
-(147, '4', 'Wilfrid Laurier University', 'University of Toronto', '2018-04-07', '13:00:00', 10, 3);
+(147, '4', 'Wilfrid Laurier University', 'University of Toronto', '2018-04-07', '13:00:00', 10, 3),
+(148, '8', 'Wilfrid Laurier University', 'University of Toronto', '2018-04-04', '13:00:00', 10, 4),
+(149, '8', 'Wilfrid Laurier University', 'University of Toronto', '2018-04-04', '17:00:00', 10, 2),
+(150, '8', 'Wilfrid Laurier University', 'University of Toronto', '2018-04-04', '20:00:00', 20, 4),
+(151, '4', 'Wilfrid Laurier University', 'University of Western Ontario', '2018-04-04', '12:00:00', 10, 2),
+(152, '10', 'Wilfrid Laurier University', 'University of Western Ontario', '2018-04-05', '15:00:00', 10, 0);
 
 -- --------------------------------------------------------
 
@@ -85,7 +90,10 @@ INSERT INTO `users` (`id`, `username`, `fname`, `lname`, `email`, `password`, `p
 (4, 'eric', 'Eric', 'Jiang', 'eric@gmail.com', '202cb962ac59075b964b07152d234b70', '9998887777'),
 (5, 'Anders', 'Anders', 'Lam', 'anders@website.com', '202cb962ac59075b964b07152d234b70', '6567478383'),
 (6, 'Steven', 'Steven', 'Gao', 'steven@laurier.ca', '202cb962ac59075b964b07152d234b70', '0109298383'),
-(7, 'Bobqin', 'Bob', 'Qin', 'b0bby@website.ca', '202cb962ac59075b964b07152d234b70', '5678901234');
+(7, 'Bobqin', 'Bob', 'Qin', 'b0bby@website.ca', '202cb962ac59075b964b07152d234b70', '5678901234'),
+(8, 'Sam', 'Sam', 'Woo', 'sam@website.com', '202cb962ac59075b964b07152d234b70', '12324657890'),
+(9, 'Tom', 'Tom', 'Don', 'tom@website.ca', '202cb962ac59075b964b07152d234b70', '12312321233'),
+(10, 'tommy', 'Tommy', 'Tommy', 'tommy@laurier.ca', '202cb962ac59075b964b07152d234b70', '1231231234');
 
 --
 -- Indexes for dumped tables
@@ -111,13 +119,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `ride_posts`
 --
 ALTER TABLE `ride_posts`
-  MODIFY `postID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `postID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

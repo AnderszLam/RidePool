@@ -41,6 +41,6 @@ if(isset($_POST["selectride"])) {
 		</form>
 	</div>
 	</body>
-		<footer><a href="ridechoice.html"><div class="bluebtn" style="position:absolute; left:50%;  padding:10px; width:75px; top:90%; transform:translate(-50%,0)">HOME</div></footer>';
+		<footer><a href="ridechoice.php"><div class="bluebtn" style="position:absolute; left:50%;  padding:10px; width:75px; top:90%; transform:translate(-50%,0)">HOME</div></footer>';
 ?>
 </html>
