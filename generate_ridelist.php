@@ -53,7 +53,7 @@ final class generate_ridelist {
 		echo '</div>';
 		echo'</body>
 		<footer>
-    <a href="ridechoice.html">
+    <a href="ridechoice.php">
         <div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div>
 </footer>';
 		mysqli_close($db);
@@ -90,7 +90,7 @@ final class generate_ridelist {
 		echo '</table>';
 		echo '</div>';
 			echo'</body>
-		<footer><a href="ridechoice.html"><div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div></footer>';	
+		<footer><a href="ridechoice.php"><div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div></footer>';	
    }
 
 }
