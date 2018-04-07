@@ -4,12 +4,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 </head>
 <body>
-	<div class="logout">
-    <?php include('server.php');
- 	if (isset($_SESSION['username'])): ?>
-		<p>Logged In As: <?php echo $_SESSION['username'];?>
-		<p><a href=login.php?logout='1' class="bluebtn" style="padding: 10px; text-decoration: none">Logout</a></p>
-    	<?php endif ?>
+    <div class="logout">
+        <?php include('server.php');
+            if (isset($_SESSION['username'])): ?>
+            <p>Logged In As: <?php echo $_SESSION['username'];?>
+            <p><a href=login.php?logout='1'" class="bluebtn" style="padding: 10px; text-decoration: none">Logout</a></p>
+        <?php endif ?>
     </div>
     <h1>RIDES AVAILABLE</h1>
     <!--BACKGROUND BAR-->
