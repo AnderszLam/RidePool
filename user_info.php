@@ -46,7 +46,8 @@ if(isset($_POST["selectride"])) {
 
 
 	echo'<form action="confirm.php" method = "post">
-		<input type="hidden" value="'.$_POST['post_id'].'" name = "post_id"/> 
+		<input type="hidden" value="'.$_POST['post_id'].'" name = "ride_id"/> 
+		<input type="hidden" value="'.$userid.'" name = "user_id"/> 
 		<input type="submit" class="bluebtn" style="position:absolute; left:50%; padding:10px; width:150px; top: 200px;transform:translate(-50%,0)" name = "confirmride" value="CONFIRM RIDE"/>
 		</form>
 	</div>

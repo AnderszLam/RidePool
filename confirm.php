@@ -7,25 +7,31 @@
 			<body>
 			
     		<h1>CONFIRMATION</h1>
-    			<div class="logout">
-        	<?php include('server.php');
-            	if (isset($_SESSION['username'])): ?>
-            	<p>Logged In As: <?php echo $_SESSION['username'];?>
-            	<p><a href=login.php?logout='1' class="bluebtn" style="padding: 10px; text-decoration: none">Logout</a></p>
-        	<?php endif ?>
-    		</div>
+    <div class="logout">
+        <?php include('server.php');
+            if (isset($_SESSION['username'])): ?>
+            <p>Logged In As: <?php echo $_SESSION['username'];?>
+            <p>
+                <a href=accountpage.php class = "bluebtn" style="padding: 5px 8px; text-decoration: none">Account</a>
+                <a href=login.php?logout='1'" class="bluebtn" style="padding: 5px 8px; text-decoration: none">Logout</a>
+            </p>
+        <?php endif ?>
+    </div>
     			<!--BACKGROUND BAR-->
     			<div class="background-bar" style="position: absolute; ; left:0px; top:100px;">
 
 <?php
 if(isset($_POST["confirmride"])) {
-	$rideid = $_POST['post_id'];
+	$rideid = $_POST['ride_id'];
+	$userid = $_SESSION['userid'];
 	$db = mysqli_connect("localhost", "root", "", "ridepool");
 	if (!$db) {
 		die("MySQL connection error");
 	}
-		
 	$query = "UPDATE ride_posts SET seats = seats -1 WHERE postID = '$rideid' and seats >0";
+	$result = mysqli_query($db, $query);
+
+	$query = "INSERT INTO riderlog (postID, userID) VALUES ($rideid, $userid)";
 	$result = mysqli_query($db, $query);
 
 	$query = "SELECT * FROM ride_posts WHERE postID='$rideid'";
