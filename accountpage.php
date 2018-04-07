@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <h1>RIDES AVAILABLE</h1>
+    <h1>YOUR ACCOUNT</h1>
         <div class="logout">
         <?php include('server.php');
             if (isset($_SESSION['username'])): ?>
@@ -20,4 +20,21 @@
     <div class="background-bar" style="position: absolute; ; left:0px; top:100px;    overflow-y: scroll;">
     
 
+    <?php
+    require_once('account_listing.php');
+    $userid = $_SESSION["userid"];
+    $username = $_SESSION['username'];
+
+
+        echo '<h2 style="position: absolute; left: 50%; top: 10px;transform: translate(-250px,0);">USERNAME</h2>
+        <p style="position: absolute; font-family: Lato; left: 50%; top: 10px;transform: translate(-250px,30px);">' . $username . '</p>';
+
+        $generate = new generate_accountlist();
+        $generate->account_list();
+
+
+
+
+    ?>
     </div>
+    

@@ -27,10 +27,10 @@
         <?php include('server.php');
             if (isset($_SESSION['username'])): ?>
             <p>Logged In As: <?php echo $_SESSION['username'];?>
-            
             <p>
                 <a href=accountpage.php class = "bluebtn" style="padding: 5px 8px; text-decoration: none">Account</a>
-                <a href=login.php?logout='1'" class="bluebtn" style="padding: 5px 8px; text-decoration: none">Logout</a></p>
+                <a href=login.php?logout='1'" class="bluebtn" style="padding: 5px 8px; text-decoration: none">Logout</a>
+            </p>
         <?php endif ?>
     </div>
 

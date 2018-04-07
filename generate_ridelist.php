@@ -73,6 +73,7 @@ final class generate_ridelist {
    }
    
    public static function list_search($list) { //takes an array of rider posts that was produced from the ride_search function from main_operations, and prints the contents into a html table
+
 		$rows = count($list); //count the length of the array
 		$indexer = $rows - 1; //adjust for referencing the last index of the array (as it will be the most recent post)
 		echo '<table style=\'position: absolute; left: 50%; top: 10px; transform: translate(-50%,0);\'>';
@@ -106,6 +107,13 @@ final class generate_ridelist {
 		<footer><a href="ridechoice.php"><div class="bluebtn" style="position:absolute; left:50%; margin:10px; padding:10px; width:75px; top:90%;transform:translate(-50%,0)">HOME</div></footer>';	
    }
 
+      
+        
+
 }
 
+
+
+
 ?>
+
