@@ -7,7 +7,7 @@ html {
     margin:0px;
     width:100%;
     background-color: #E5E5E5;
-    height: 75vh;
+    height: 50vh;
 }
 
 
@@ -52,6 +52,37 @@ h3 {
     font-weight: 400; 
     text-decoration: none;
 }
+
+.error {
+    position: absolute;
+    left: 50%;
+    top: 775px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #154159;
+}
+
+.errors {
+    position: absolute;
+    left: 50%;
+    top: 775px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #154159;
+}
+
 .bluebtn:hover{
 
     background-color: #091E29;

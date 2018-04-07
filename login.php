@@ -7,6 +7,7 @@
 <body>
 
 <form method="post" action="login.php">
+  <?php include ('errors.php'); ?>
   <div class="container">
     <h1>LOGIN</h1>
     <div class="background-bar" style="position: absolute; ; left:0px; top:100px ;width:100%;"></div>

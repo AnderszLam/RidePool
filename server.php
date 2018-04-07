@@ -29,12 +29,12 @@
 		$results = mysqli_query($database,$userQuery);
 
 		if (mysqli_num_rows($results) >= 1) {
-			array_push($errors, "username already exists");
+			array_push($errors, "Username already exists");
 		}
 
 		if ($pass != $passr) {
-			array_push($errors, "passwords do not match");
-		}
+			array_push($errors, "Passwords do not match");
+		}	
 
 
 
@@ -100,9 +100,11 @@
 			$_SESSION['success'] = "you logged in";
 			echo "hey faggot";
 			header('location: ridechoice.php');
-		}else {
-			array_push($errors, "wrong information");
-			header("location: login.php");
+		}
+
+		else {
+			array_push($errors, "Wrong Username or Password");
+			//header("location: login.php");
 		}
 	}
 
