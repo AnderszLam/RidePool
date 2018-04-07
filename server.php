@@ -1,7 +1,8 @@
 <?php 
 	//start the session for logging in
-	session_start();
-	
+	if(!isset($_SESSION)){
+	   session_start();
+	}
 	//connect to the rider database
 	$errors = array();
 	$database = mysqli_connect('localhost','root', '', 'ridepool');
@@ -98,7 +99,6 @@
 			//log the user into website
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "you logged in";
-			echo "hey faggot";
 			header('location: ridechoice.php');
 		}
 

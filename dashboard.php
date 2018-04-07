@@ -3,6 +3,7 @@
 require_once('generate_ridelist.php'); //import other php files
 require_once('driver.php');
 require_once('rider.php');
+require_once('server.php');
 
 if(isset($_POST["ridesearch"])) { //handler for the search for a ride button
 	//retrieve user inputs from html form
